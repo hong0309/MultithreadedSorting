@@ -585,13 +585,15 @@ int main(int, char**)
             ImGui::GetDrawData()
         );
 
-        g_pSwapChain->Present(1, 0);
-
         // Present
-        HRESULT hr = g_pSwapChain->Present(1, 0);   // Present with vsync
-        //HRESULT hr = g_pSwapChain->Present(0, 0); // Present without vsync
+        HRESULT hr = g_pSwapChain->Present(1, 0);
         g_SwapChainOccluded = (hr == DXGI_STATUS_OCCLUDED);
     }
+
+    bubble.RequestStop();
+    selection.RequestStop();
+    quick.RequestStop();
+    merge.RequestStop();
 
     if (bubbleThread.joinable())
         bubbleThread.join();
