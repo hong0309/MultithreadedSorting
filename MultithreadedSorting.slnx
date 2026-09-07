@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="MultithreadedSorting/MultithreadedSorting.vcxproj" Id="eed874af-0253-471a-b63a-514951fb58a6" />
+</Solution>

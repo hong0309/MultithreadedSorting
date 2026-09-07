@@ -1,0 +1,25 @@
+# Visual Studio user settings and cache
+.vs/
+*.user
+*.suo
+*.VC.db
+*.VC.opendb
+
+# Build outputs
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+bin/
+obj/
+
+# Compiled artifacts
+*.pdb
+*.ilk
+*.exe
+*.dll
+*.lib
+*.obj
+*.tlog
+*.lastbuildstate
+
